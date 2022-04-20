@@ -1,3 +1,3 @@
-import MobileKeyboardOpener from "./MobileKeyboardOpener"
+import MobileKeyboardOpener from './MobileKeyboardOpener';
 
 export default MobileKeyboardOpener;
