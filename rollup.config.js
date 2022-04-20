@@ -36,6 +36,29 @@ export default [
     ],
   },
   {
+    input: 'src/iife.tsx',
+    output: [
+      {
+        file: packageJson.main.replace('cjs', 'iife'),
+        format: 'iife',
+        sourcemap: true,
+        exports: 'auto',
+        globals: {
+          react: 'React',
+          'react-dom': 'reactDom',
+        },
+      },
+    ],
+    plugins: [
+      external(),
+      resolve(),
+      commonjs(),
+      typescript({ tsconfig: './tsconfig.json' }),
+      postcss(),
+      terser(),
+    ],
+  },
+  {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     external: [/\.css$/],
