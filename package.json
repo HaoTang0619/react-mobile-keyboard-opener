@@ -1,0 +1,60 @@
+{
+  "name": "react-mobile-keyboard-opener",
+  "version": "1.0.0",
+  "description": "React component for opening the keyboard on mobile websites with user interactions.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "private": false,
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "npm run prebuild && rollup -c",
+    "watch": "rollup -cw"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "mobile",
+    "ios",
+    "android",
+    "keyboard",
+    "input"
+  ],
+  "author": "Howard Tang <t919901@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/HaoTang0619/react-mobile-keyboard-opener",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaoTang0619/react-mobile-keyboard-opener.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^17.0.39",
+    "autoprefixer": "^10.4.4",
+    "babel-loader": "^8.2.4",
+    "postcss": "^8.4.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.67.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tailwindcss": "^3.0.23",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {}
+}
