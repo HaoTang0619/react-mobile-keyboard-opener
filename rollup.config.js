@@ -17,13 +17,13 @@ export default [
         format: 'cjs',
         sourcemap: true,
         name: 'react-mobile-keyboard-opener',
-        exports: 'auto',
+        exports: 'named',
       },
       {
         file: packageJson.module,
         format: 'esm',
         sourcemap: true,
-        exports: 'auto',
+        exports: 'named',
       },
     ],
     plugins: [
@@ -42,7 +42,7 @@ export default [
         file: packageJson.main.replace('cjs', 'iife'),
         format: 'iife',
         sourcemap: true,
-        exports: 'auto',
+        exports: 'named',
         globals: {
           react: 'React',
           'react-dom': 'reactDom',
