@@ -1,0 +1,7 @@
+.hidden_input {
+  caret-color: transparent;
+  font-size: 16px; /* Prevent window zoom (https://stackoverflow.com/a/16255670) */
+  opacity: 0;
+  position: fixed;
+  visibility: hidden;
+}
