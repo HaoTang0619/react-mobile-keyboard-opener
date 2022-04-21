@@ -32,7 +32,11 @@ const App = () => {
       <input id="new_target" placeholder="new target" />
       <br />
       <button id="hidden_helper">Hidden Helper</button>
-      <MobileKeyboardOpener helperId="hidden_helper" targetId={targetId} />
+      <MobileKeyboardOpener
+        helperId="hidden_helper"
+        targetId={targetId}
+        inputProps={{ id: 'hid' }}
+      />
     </>
   );
 };

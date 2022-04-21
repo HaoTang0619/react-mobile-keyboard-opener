@@ -20,7 +20,7 @@ export const MobileKeyboardOpener = (props: MobileKeyboardOpenerProps) => {
       setOptions((opt) =>
         !!options.targetId
           ? { ...opt, ...options, focusOnInit: true }
-          : { ...opt, ...options, targetId: 'hidden_input' },
+          : { ...opt, ...options, targetId: inputProps?.id || 'hidden_input' },
       ),
     [props],
   );

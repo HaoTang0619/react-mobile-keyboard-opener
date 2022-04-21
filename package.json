@@ -1,6 +1,6 @@
 {
   "name": "react-mobile-keyboard-opener",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for opening the keyboard on mobile websites with user interactions.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
